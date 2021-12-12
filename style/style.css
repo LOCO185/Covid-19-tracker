@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&family=Roboto:wght@100;300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lavender;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(97, 44, 141);
+  display: flex;
+  justify-content: center;
+  font-size: 7vmin;
+  font-weight: 600;
+  color: #a0a0ac;
+}
+header i {
+  color: rgb(129, 184, 20);
+}
+.container {
+  margin-top: 5px;
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.row {
+  background-color: rgb(250, 250, 250);
+  height: 27vmin;
+  width: 70vmin;
+  text-align: center;
+}
+.sub-title {
+  color: rgb(60, 53, 66);
+  line-height: 1rem;
+  font-size: 4vmin;
+  transform: translateY(-30px);
+}
+.fas {
+  font-size: 5vmin;
+  color: rgb(129, 184, 20);
+  transform: translateY(-60px);
+}
+.fa-lungs-virus {
+  color: rgb(134, 37, 52);
+}
+.fa-skull-crossbones {
+  color: black;
+}
+.fa-lungs {
+  color: hotpink;
+}
+.total {
+  font-size: 3vmin;
+  transform: translateY(-80px);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.country-stats-container {
+  display: none;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.country-stats-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li {
+  margin: 5px 10px;
+  cursor: pointer;
+}
+ul li:hover {
+  color: rgb(126, 73, 168);
+}
+.country-stats {
+  padding: 10px;
+  border: 1px black solid;
+  display: flex;
+  margin: 0 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-stats-flex {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.chart-container {
+  min-width: 100%;
+}
+.buttons-container {
+  margin: 10px;
+}
+.btn-continent {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 9px;
+  background-color: #a0a0ac;
+  border-color: transparent;
+}
+.btn-continent:hover {
+  color: rgb(130, 56, 190);
+  border-color: rgb(130, 56, 190);
+}
+.btn-stat-mode {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 9px;
+  background-color: #a0a0ac;
+  border-color: transparent;
+}
+.btn-stat-mode:hover {
+  color: rgb(130, 56, 190);
+  border-color: rgb(130, 56, 190);
+}
+.buttons-container > div {
+  display: flex;
+  width: 110%;
+  justify-content: center;
+}
+button {
+  margin: 5px 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.country-stats-header {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}

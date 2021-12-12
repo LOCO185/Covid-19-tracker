@@ -1,0 +1,46 @@
+/* Landscape Mobile Media Querries*/
+@media only screen and (max-width: 812px) {
+  .body {
+    overflow-x: hidden;
+  }
+  .header {
+    width: 100%;
+  }
+  .container {
+    grid-gap: 10px;
+  }
+  .sub-title {
+    transform: translateY(-15px);
+  }
+  .fas {
+    transform: translateY(-35px);
+  }
+  .total {
+    transform: translateY(-50px);
+  }
+  .buttons-continents {
+    width: 100vw;
+  }
+  .buttons-container {
+    margin: 0px;
+    overflow-x: hidden;
+  }
+}
+/* Regular Mobile Screen Media Querries */
+@media only screen and (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+  .container {
+    grid-gap: 10px;
+  }
+  .row {
+    height: 23vmin;
+    width: 100%;
+  }
+  .buttons-container {
+    margin: 0px;
+    overflow-x: visible;
+    transform: translateX(-25px);
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/mobile.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <script
+      src="https://kit.fontawesome.com/620eac6137.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Covid-19</title>
+  </head>
+  <body>
+    <div class="section1">
+    <header>C<i class="bx bxs-virus-block bx-tada"></i>VID-19</header>
+    <div class="container">
+      <div class="row">
+        <h5 class="sub-title">CONFIRMED</h5>
+        <i class="fas fa-lungs-virus fa-3x my-3 pulse"></i>
+        <h5 class="total">Total <br> 268,271,595</h5>
+      </div>
+      <div class="row">
+        <h5 class="sub-title">ACTIVE</h5>
+        <i class="fas fa-head-side-mask fa-3x my-3"></i>
+        <h5 class="total">Total <br> 21,497,867</h5>
+      </div>
+      <div class="row">
+        <h5 class="sub-title">DEATHS</h5>
+        <i class="fas fa-skull-crossbones fa-3x my-3"></i>
+        <h5 class="total">Total <br> 5,298,623</h5>
+      </div>
+      <div class="row">
+        <h5 class="sub-title">RECOVERD</h5>
+        <i class="fas fa-lungs fa-3x my-3"></i>
+        <h5 class="total">Total <br> 241,475,105</h5>
+      </div>
+    </div>
+  </div>
+  <div class="section2">
+    <div class="loading">
+      <div class="spinner"></div>
+  </div>
+  <section class="info">
+      <div class="chart-container">
+          <canvas id='myChart'></canvas>
+      </div>
+      <div class="country-stats-container">
+          <h2 class='country-stats-header'></h2>
+          <div class="country-stats-flex">
+              <div class="country-stats">
+                  <span class="country-stats-label">Total Cases:</span>
+                  <span data-country-stats="confirmed" class="country-stats__value"></span>
+              </div>
+              <div class="country-stats">
+                  <span class="country-stats-label">New Cases:</span>
+                  <span data-country-stats="newCases" class="country-stats__value"></span>
+              </div>
+              <div class="country-stats">
+                  <span class="country-stats-label">Total Deaths:</span>
+                  <span data-country-stats="deaths" class="country-stats__value"></span>
+              </div>
+              <div class="country-stats">
+                  <span class="country-stats-label">New Deaths:</span>
+                  <span data-country-stats="newDeaths" class="country-stats__value"></span>
+              </div>
+              <div class="country-stats">
+                  <span class="country-stats-label">Total Recovered:</span>
+                  <span data-country-stats="recovered" class="country-stats__value"></span>
+              </div>
+              <div class="country-stats">
+                  <span class="country-stats-label">Critical:</span>
+                  <span data-country-stats="critical" class="country-stats__value"></span>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="buttons-container">
+      <div class="buttons-continents">
+          <button data-continent="world" class='btn-continent'>World</button>
+          <button data-continent="Asia" class='btn-continent'>Asia</button>
+          <button data-continent="Europe" class='btn-continent'>Europe</button>
+          <button data-continent="Africa" class='btn-continent'>Africa</button>
+          <button data-continent="Oceania" class='btn-continent'>Oceania</button>
+          <button data-continent="Americas" class='btn-continent'>Americas</button>
+      </div>
+      <div class="buttons-stats-modes">
+          <button data-stat-mode="confirmed" class="btn-stat-mode">Confirmed</button>
+          <button data-stat-mode="deaths" class="btn-stat-mode">Deaths</button>
+          <button data-stat-mode="recovered" class="btn-stat-mode">Recovered</button>
+          <button data-stat-mode="critical" class="btn-stat-mode">Critical</button>
+      </div>
+  </div>
+  <div class="countries-list-container">
+      <ul class='countries-list'>
+      </ul>
+  </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./scripts/app.js"></script>
+    <!-- <script src="./scripts/index.js"></script> -->
+  </body>
+</html>
