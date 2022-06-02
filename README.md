@@ -1,9 +1,9 @@
 # Covid-19-tracker
 
 ## A web app to represent the data of COVID-19 epidemic build with:
-1.React.
-2.Chart.JS
-3.Material UI.
+1. React.
+2. Chart.JS
+3. Material UI.
 
 This is motivated and learned from Javascript Mastery.
 
