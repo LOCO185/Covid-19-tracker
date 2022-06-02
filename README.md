@@ -9,7 +9,9 @@ This is motivated and learned from Javascript Mastery.
 
 ## Tech Stack
 HTML5, CSS3, Javascript, ReactJS, React Hooks, Chart.JS, Material UI.
-API used: [api](https://corona-api.com/countries)
+
+## API used
+[API](https://corona-api.com/countries)
 
 ![statistics](https://user-images.githubusercontent.com/92999316/171623252-8970619d-5a62-477b-bbbd-1a44fff5fab6.png)
 
